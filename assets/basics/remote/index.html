@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=“utf-8” />
+  <title>TV Remote</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+  <div class="controls">
+    <div class="search">
+      <input id="searchQuery" type="search" value="" placeholder="Search on Youtube..." />
+      <div class="loading"></div>
+    </div>
+    <div class="playback">
+      <button class="play"></button>
+      <button class="pause"></button>
+    </div>
+  </div>
+
+  <div id="results" class="video-list">
+
+  </div>
+
+  <div class="__templates" style="display:none;">
+    <article class="video">
+      <figure><img src="" alt="" /></figure>
+
+      <div class="info">
+        <h2></h2>
+      </div>
+
+    </article>
+  </div>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/jquery-1.11.1.min.js"></script>
+
+  <script src="/js/search.js"></script>
+  <script src="/js/remote.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "//": "The // keys in package.json are comments.",
+
+  "//": "Your project’s name. Go ahead and change it!",
+  "name": "Remote",
+  "//": "A simple description of what the app does.",
+  "description": "An example of node-webkit",
+  "//": "This is the first html the app will load. Just leave this this way",
+  "main": "app://host/index.html",
+  "//": "The version number. 0.0.1 is a good start :D",
+  "version": "0.0.1",
+
+  "//": "This is used by Node-Webkit to set up your app.",
+  "window": {
+    "//": "The Window Title for the app",
+    "title": "Remote",
+    "//": "The Icon for the app",
+    "icon": "css/images/icon.png",
+    "//": "Do you want the File/Edit/Whatever toolbar?",
+    "toolbar": false,
+    "//": "Do you want a standard window around your app (a title bar and some borders)?",
+    "frame": true,
+    "//": "Can you resize the window?",
+    "resizable": true
+  },
+  "webkit": {
+    "plugin": false,
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Safari/537.36"
+  },
+
+  "//": "These are the libraries we’ll be using:",
+  "//": "Express is a web server, which will handle the files for the remote",
+  "//": "Socket.io lets you handle events in real time, which we'll use with the remote as well.",
+  "dependencies": {
+    "express": "^4.9.5",
+    "socket.io": "^1.1.0"
+  },
+
+  "//": "And these are just task handlers to make things easier",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.6.0",
+    "grunt-node-webkit-builder": "^0.1.21"
+  }
+}

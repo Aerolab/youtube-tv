@@ -1,0 +1,46 @@
+body {
+  background: #333;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* Server Info (Remote Control IP) */
+#serverInfo {
+  background: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#serverInfo h1 {
+  color: #fff;
+  margin: 0 40px;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 140%;
+  width: 100%;
+}
+
+/* Video Player */
+#videoPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+iframe {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+

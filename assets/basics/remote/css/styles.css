@@ -1,0 +1,121 @@
+body {
+  background: #f0f0f0;
+}
+
+/* The search form */
+.controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+  z-index: 999;
+  overflow: hidden;
+}
+.controls .search {
+  position: relative;
+  margin-right: 60px;
+}
+.controls input[type=search] {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 20px 63px 20px 15px;
+  background: #fff;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.controls .loading {
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  background: url(images/loading@2x.gif);
+  background-size: 32px 32px;
+  display: none; /* Hidden by default */
+}
+
+
+.controls .playback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+.playback button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #CC181E;
+  background-size: 60px 120px;
+  background-image: url(images/playback@2x.png);
+  background-position: -1000px -1000px;
+}
+  .playback button.play {
+    background-position: 0px 0px;
+  }
+  .playback button.pause {
+    background-position: 0px -60px;
+  }
+
+
+/* Video Listings */
+.video-list {
+  padding-top: 62px;
+}
+.video {
+  position: relative;
+  margin: 6px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+  min-height: 73px;
+  cursor: pointer;
+}
+
+.video:hover, .video:active {
+  background: #303030;
+  color: #fff;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* The thumbnails come in 4:3, but the videos are 16:9. Crop them */
+.video figure {
+  position: absolute;
+  width: 130px;
+  height: 73px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.video figure img {
+  width: 100%;
+  margin-top: -12px;
+}
+
+.video .info {
+  margin-left: 130px;
+  padding: 5px 10px 5px 10px;
+}
+.video h2 {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 150%;
+}
