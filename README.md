@@ -13,14 +13,14 @@ First of all, you need to install Node.JS (a Javascript platform), which you can
 
 Since we are going to be building two apps (a desktop app and a mobile app), it’s better if we get the boring HTML+CSS part out of the way, so we can concentrate on the Javascript part of the equation.
 
-**Download the files from [https://github.com/Aerolab/youtube-tv/blob/master/assets/basics.zip](https://github.com/Aerolab/youtube-tv/blob/master/assets/basics.zip?raw=true) and put them in a new folder**. You can name the project folder youtube-tv or whatever you want. The folder should look like this:
+**Download the project files from [https://github.com/Aerolab/youtube-tv/blob/master/assets/basics.zip](https://github.com/Aerolab/youtube-tv/blob/master/assets/basics.zip?raw=true) and put them in a new folder**. You can name the project folder youtube-tv or whatever you want. The folder should look like this:
 
 ```
 - index.html   // This is the starting point for our desktop app
 - css          // Our desktop app styles
 - js           // This is where the magic happens
 - remote       // This is where the magic happens (Part 2)
-- libraries    // FFMPEG libraries, which give you H.264 support in Node-Webkit
+- libraries    // FFMPEG libraries, which give you H.264 video support in Node-Webkit
 - player       // Our youtube player
 - Gruntfile.js // Build scripts
 - run.bat      // run.bat runs the app on Windows
