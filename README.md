@@ -1,6 +1,6 @@
 # Building a Remote-Controlled TV with Node-Webkit
 
-![Youtube TV](http://aerolab.github.io/youtube-tv/assets/youtube-tv.jpg)
+![Youtube TV](https://github.com/Aerolab/youtube-tv/blob/master/assets/youtube-tv.jpg?raw=true)
 
 Node-Webkit is one of the most promising technologies to come out in the last few years: It lets you ship a native desktop app for Windows, Mac and Linux **just using HTML, CSS and some of Javascript**. Those are the exact same languages you use to build any web app. You basically get you very own Frameless Webkit to build your app, which is then supercharged with NodeJS, giving you access to some powerful libraries that are not available in a typical browser.
 
@@ -13,7 +13,7 @@ First of all, you need to install Node.JS (a Javascript platform), which you can
 
 Since we are going to be building two apps (a desktop app and a mobile app), it’s better if we get the boring HTML+CSS part out of the way, so we can concentrate on the Javascript part of the equation.
 
-Download the base files for the project from [https://github.com/Aerolab/youtube-tv](https://github.com/Aerolab/youtube-tv) , create a project folder and put all the files from the zip there. You can name the project folder youtube-tv or whatever you want. The folder should look like this:
+**Download the files from [https://github.com/Aerolab/youtube-tv/blob/master/assets/basics.zip](https://github.com/Aerolab/youtube-tv/blob/master/assets/basics.zip?raw=true) and put them in a new folder**. You can name the project folder youtube-tv or whatever you want. The folder should look like this:
 
 ```
 - index.html   // This is the starting point for our desktop app
