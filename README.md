@@ -6,6 +6,8 @@ Node-Webkit is one of the most promising technologies to come out in the last fe
 
 As a demo, we are going to build a Remote-Controlled Youtube App. This involves creating native app that displays YouTube videos on your computer, as well as a mobile client that will let you search and pick the videos you want to watch straight from your couch.
 
+You can download the finished project from [https://github.com/Aerolab/youtube-tv](https://github.com/Aerolab/youtube-tv). You need to follow the first part of this guide (Getting Started) to set up the environment and then run run.sh (on Mac) or run.bat (on Windows) to start the app.
+
 
 ## Getting Started
 
@@ -103,7 +105,7 @@ npm install
 grunt nodewebkitbuild
 ```
 
-*Note:* You may run into some issues when on Mac or Linux. In that case, try using "sudo npm install" and "sudo grunt nodewebkitbuild".
+*Note:* You may run into some issues when doing this on Mac or Linux. In that case, try using "sudo npm install" and "sudo grunt nodewebkitbuild".
 
 **npm install** installs all of the dependencies you mentioned in package.json, both the regular dependencies and the development ones, like grunt and grunt-nodewebkitbuild, which downloads the windows and mac version of node-webkit, setting them up so they can play videos, and building the app.
 
