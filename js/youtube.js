@@ -43,11 +43,9 @@ var Youtube = new (function() {
 });
 
 
-$(window).load(function(){
-
 // The web server will serve the assets needed for our video player
 window.ytExpress = require('express');
-window.ytApp = express();
+window.ytApp = ytExpress();
 window.ytServer = require('http').Server(ytApp);
 window.ytServerPort = 9090;
 window.ytIo = require('socket.io')(ytServer);
@@ -73,7 +71,5 @@ ytIo.on('connection', function (socket) {
   socket.on('nowStopped', function (video) {
     Youtube.setStatus('stop');
   });
-
-});
 
 });
